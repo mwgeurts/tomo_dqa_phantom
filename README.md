@@ -5,7 +5,7 @@ by Mark Geurts <mark.w.geurts@gmail.com>
 
 ## Description
 
-The TomoTherapy&reg; DQA Phantom Creation Tool reads in a CT (provided through MATLAB UI) and writes a copy of the CT renamed such that TomoTherapy will recognize it as a DQA phantom.  TomoTherapy is a registered trademark of Accuray Incorporated.
+The TomoTherapy&reg; DQA Phantom Creation Tool reads in a CT (provided through MATLAB&reg; UI) and writes a copy of the CT renamed such that TomoTherapy will recognize it as a DQA phantom.  TomoTherapy is a registered trademark of Accuray Incorporated. MATLAB is a registered trademark of Mathworks, Inc.
 
 ## Installation
 
