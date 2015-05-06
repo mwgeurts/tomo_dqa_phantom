@@ -9,7 +9,7 @@ The TomoTherapy&reg; DQA Phantom Creation Tool reads in a CT (provided through M
 
 ## Installation
 
-This script does not require installation.  Simply copy `DQAphantom.m` to your MATLAB path.
+This script does not require installation.  Simply copy [DQAphantom.m](DQAphantom.m) to your MATLAB path.
 
 ## Usage and Documentation
 
