@@ -31,9 +31,10 @@ if iscell(names) || sum(names ~= 0)
     % Open UI to allow user to enter a phantom name
     id = inputdlg('Enter a name for the phantom');
 
-    % Generate unique study and series UIDs
+    % Generate unique study, series, and FOR UIDs
     study = dicomuid;
     series = dicomuid;
+    frame = dicomuid;
     
     % Start waitbar
     progress = waitbar(0, 'Processing DICOM images');
@@ -67,9 +68,10 @@ if iscell(names) || sum(names ~= 0)
         info.MediaStorageSOPInstanceUID = dicomuid;
         info.SOPInstanceUID = info.MediaStorageSOPInstanceUID;
 
-        % Replace the study and series instance UIDs
+        % Replace the study, series instance, and FOR UIDs
         info.StudyInstanceUID = study;
         info.SeriesInstanceUID = series;
+        info.FrameOfReferenceUID = frame;
         
         % Read in the 2D DICOM image data
         img = dicomread(info);
